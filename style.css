@@ -28,14 +28,22 @@ h3{
     text-align: center;
 
 }
+h4{
+    color: rgb(95, 95, 95);
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: 'Montserrat',sans-serif;
+    padding-bottom: 5px;
+}
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color:rgb(81, 78, 78);
+    background-color:transparent;
     font-family: 'Montserrat',
     sans-serif;
+    
     
     
 
@@ -46,12 +54,13 @@ nav{
     color: whitesmoke;
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: 25px;
+   
 }
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 45%;
+    width: 50%;
 }
     
 
@@ -65,6 +74,12 @@ nav{
     letter-spacing: 5px;
     font-weight:bold ;
     font-size: 14px;
+    
+
+}
+.nav-links li a:hover{
+    background-color: pink;
+    color: black;
 
 }
 .burger{
@@ -106,6 +121,7 @@ nav{
     
 .container{
     background-image: url('img5.jpg');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -118,43 +134,128 @@ nav{
    margin-left: 2em;
    margin-top: 10px;
    margin-bottom: 20px;
-   
-    
 
 }
-.headcert1{
-    color: grey;
-    text-decoration: none;
-    letter-spacing: 5px;
-    font-weight:bold;
-    font-size: 32px;
-    font-family: 'Montserrat',
-    sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-align: center;
-    margin-top: 20px;
+
+
+#cardprojects{
+    background-color: lightcoral;
+    margin: auto;
 }
-.certificates{
-    margin-top: 50px;
-    margin-bottom: 20%;
-}
-.certimg{
-    background-color: rgb(150, 139, 139);
+.omniproject{
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50%;
+    margin-bottom: auto;
     width: 50%;
-    float: left;
     border-radius: 20px;
     box-shadow: 10px 5px 5px grey;
-    
-    
+   
+}
+.omniproject:hover{
+     transform: scale(1.2);
 }
 .projects{
     color: grey;
     text-decoration: none;
     letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: 'Montserrat',
+        sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 50px;
+    background-color: pink;
+
+}
+.projectoptions{
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 30px;
+    color: whitesmoke;
+    background-color:transparent;
+}
+.card{
+    width: 15rem;
+    font-size: small;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    float: left;
+
+}
+.card:hover{
+     transform: scale(1.2);
+}
+.card-body{
+    float: left;
+    display: inline-block;
+}
+.card-img-top{
+    width: auto;
+    size: auto;
+}
+.omnifoodbutton1 {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: skyblue;
+    color: whitesmoke;
+    font-family: 'Montserrat',
+        sans-serif;
+    box-shadow: 5px 5px 5px lightslategray;
+    text-align: center;
+    margin-right: 20px;
+
+
+}
+
+.omnifoodbutton2{
+    padding: 8px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: black;
+    font-family: 'Montserrat',
+        sans-serif;
+    box-shadow: 5px 5px 5px lightslategray;
+    float: right;
+
+}
+.weatherappbutton1 {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: skyblue;
+    color: whitesmoke;
+    font-family: 'Montserrat',
+    sans-serif;
+    box-shadow: 5px 5px 5px lightslategray;
+    text-align: center;
+    margin-right: 20px;
+    
+    
+}
+.weatherappbutton2{
+    padding: 8px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: black;
+    font-family: 'Montserrat',
+    sans-serif;
+    box-shadow: 5px 5px 5px lightslategray;
+    float: right;
+    
+}
+.weatherappbutton1:focus{
+    outline: 0;
+    box-shadow: none;
+}
+.headcert1{
+    color: whitesmoke;
+    text-decoration: underline 2px ;
+    letter-spacing: 5px;
     font-weight:bold;
     font-size: 32px;
     font-family: 'Montserrat',
@@ -162,15 +263,38 @@ nav{
     text-transform: uppercase;
     letter-spacing: 5px;
     text-align: center;
-    margin-top: 20px;
+    
 }
+
+
+.certbutton {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: palevioletred;
+    color: whitesmoke;
+    font-family: 'Montserrat',sans-serif;
+    box-shadow: 10px 5px 5px grey;
+    text-align: center;
+    margin-right: 20px;
+}
+.certbutton:hover{
+    transform: scale(.70);
+    background-color: turquoise;
+}
+#certcard{
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+/*footer*/
+
 .footer{
     margin-top: 5em;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 10%;
+    height: 12%;
     background-color:rgb(81, 78, 78);
     color: whitesmoke;
     text-decoration: none;
@@ -181,11 +305,13 @@ nav{
     text-transform: lowercase;
     letter-spacing: 3px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 5px;
+    
 
 
 }
 .coded{
+    text-transform: uppercase;
     text-shadow: rosybrown;
     margin-top: 4px;
 }
